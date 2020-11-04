@@ -1,0 +1,17 @@
+{
+  "name": "guess-melody",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Учебный проект Угадай мелодию",
+  "scripts": {
+    "eslint": "eslint src/**/*.js",
+    "test": "npm run eslint"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-htmlacademy": "^0.6.0"
+  },
+  "engines": {
+    "node": "12"
+  }
+}
