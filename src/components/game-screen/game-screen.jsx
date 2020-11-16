@@ -10,7 +10,7 @@ class GameScreen extends PureComponent {
     super(props);
 
     this.state = {
-      state: 0
+      step: 0
     };
   }
 
