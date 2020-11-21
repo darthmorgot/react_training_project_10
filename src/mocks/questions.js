@@ -9,15 +9,15 @@ export default [
       genre: `rock`
     },
     {
-      src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
+      src: `https://upload.wikimedia.org/wikipedia/commons/c/c1/90_%28Ninety%29.wav`,
       genre: `blues`
     },
     {
-      src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
+      src: `https://upload.wikimedia.org/wikipedia/commons/8/8b/Himno_nacional_fineslandes.ogg`,
       genre: `jazz`
     },
     {
-      src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
+      src: `https://upload.wikimedia.org/wikipedia/commons/9/90/Sare_Jahan_Se_Acha_-_Music.ogg`,
       genre: `rock`
     }]
   },
