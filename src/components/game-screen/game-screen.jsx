@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {ActionCretor} from '../../store/action';
+import {ActionCreator} from '../../store/action';
 import {GameType} from '../../const';
 import ArtistQuestionScreen from '../artist-question-screen/artist-question-screen';
 import GenreQuestionScreen from '../genre-question-screen/genre-question-screen';
@@ -57,10 +57,10 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   resetGame() {
-    dispatch(ActionCretor.resetGame());
+    dispatch(ActionCreator.resetGame());
   },
   onUserAnswer() {
-    dispatch(ActionCretor.incrementStep());
+    dispatch(ActionCreator.incrementStep());
   }
 });
 
