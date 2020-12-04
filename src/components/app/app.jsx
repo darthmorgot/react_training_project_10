@@ -26,7 +26,7 @@ const App = () => {
         </Route>
         <Route exact
           path="/result"
-          render={(history) => (
+          render={({history}) => (
             <WinScreen
               onReplayButtonClick={() => history.push(`/game`)}
             />
@@ -34,7 +34,7 @@ const App = () => {
         />
         <Route exact
           path="/lose"
-          render={(history) => (
+          render={({history}) => (
             <GameOverScreen
               onReplayButtonClick={() => history.push(`/game`)}
             />
