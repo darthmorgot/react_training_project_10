@@ -5,6 +5,7 @@ import GameOverScreen from '../game-over-screen/game-over-screen';
 import WelcomeScreen from '../welcome-screen/welcome-screen';
 import WinScreen from '../win-screen/win-screen';
 import GameScreen from '../game-screen/game-screen';
+import {PrivateRoute} from '../private-route/private-route';
 import {MAX_MISTAKE_COUNT} from '../../const';
 
 const App = () => {
@@ -19,13 +20,18 @@ const App = () => {
               errorsCount={MAX_MISTAKE_COUNT}
             />
           )}
-        >
-        </Route>
-        <Route exact path="/login">
-          <AuthScreen />
-        </Route>
+        />
         <Route exact
-          path="/result"
+          path="/login"
+          render={({history}) => (
+            <AuthScreen
+              onReplayButtonClick={() => history.push(`/game`)}
+            />
+          )}
+        />
+        <PrivateRoute
+          exact
+          path={`/result`}
           render={({history}) => (
             <WinScreen
               onReplayButtonClick={() => history.push(`/game`)}
