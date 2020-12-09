@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux';
-import {gameProcess} from '../reducers/game-process/game-process';
-import {gameData} from '../reducers/game-data/game-data';
-import {user} from '../reducers/user/user';
+import {gameProcess} from './game-process/game-process';
+import {gameData} from './game-data/game-data';
+import {user} from './user/user';
 
 export const NameSpace = {
   DATA: `DATA`,

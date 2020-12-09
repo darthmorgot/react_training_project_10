@@ -33,11 +33,13 @@ const App = () => {
         <PrivateRoute
           exact
           path={AppRoute.RESULT}
-          render={({history}) => (
-            <WinScreen
-              onReplayButtonClick={() => history.push(AppRoute.GAME)}
-            />
-          )}
+          render={({history}) => {
+            return (
+              <WinScreen
+                onReplayButtonClick={() => history.push(AppRoute.GAME)}
+              />
+            );
+          }}
         />
         <Route exact
           path={AppRoute.LOSE}

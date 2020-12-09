@@ -42,7 +42,7 @@ export const loadQuestions = (questions) => ({
   payload: questions
 });
 
-export const requiredAuthorization = (status) => ({
+export const requireAuthorization = (status) => ({
   type: ActionType.REQUIRED_AUTHORIZATION,
   payload: status
 });

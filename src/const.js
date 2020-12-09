@@ -19,6 +19,6 @@ export const AppRoute = {
 };
 
 export const APIRoute = {
-  QUESTIONS: `/questinos`,
+  QUESTIONS: `/questions`,
   LOGIN: `/login`
 };

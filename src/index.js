@@ -7,13 +7,13 @@ import thunk from 'redux-thunk';
 import {createAPI} from './services/api';
 import App from './components/app/app';
 import rootReducer from './store/reducers/root-reducer';
-import {requiredAuthorization} from './store/action';
+import {requireAuthorization} from './store/action';
 import {fetchQuestionList, checkAuth} from './store/api-actions';
 import {AuthorizationStatus} from './const';
 import {redirect} from './store/middlewares/redirect';
 
 const api = createAPI(
-    () => store.dispatch(requiredAuthorization(AuthorizationStatus.NO_AUTH))
+    () => store.dispatch(requireAuthorization(AuthorizationStatus.NO_AUTH))
 );
 
 const store = createStore(
