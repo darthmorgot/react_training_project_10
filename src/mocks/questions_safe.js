@@ -9,7 +9,7 @@ export default [
       genre: `rock`
     },
     {
-      src: `https://upload.wikimedia.org/wikipedia/commons/c/c1/90_%28Ninety%29.wav`,
+      src: `https://upload.wikimedia.org/wikipedia/commons/f/f0/A_War_Of_Shadows_by_Spelled_Moon.ogg`,
       genre: `blues`
     },
     {

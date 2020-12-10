@@ -47,7 +47,7 @@ const withUserAnswer = (Component) => {
     }
   }
 
-  withUserAnswer.propTypes = {
+  WithUserAnswer.propTypes = {
     question: PropTypes.shape({
       answers: PropTypes.arrayOf(PropTypes.shape({
         src: PropTypes.string.isRequired,
