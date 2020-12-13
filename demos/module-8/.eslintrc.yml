@@ -4,6 +4,8 @@ env:
   commonjs: true
   jest: true
 
+root: true
+
 extends: ['htmlacademy/es6', 'plugin:react/recommended']
 
 parserOptions:
