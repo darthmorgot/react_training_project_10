@@ -2,7 +2,7 @@ const AT_SIGN = `@`;
 const EMAIL_REGEXP = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 const isValidEmail = (email) => {
-  return false;
+  // return false;
 
   // return email === `test@test.ru`;
 
@@ -10,7 +10,7 @@ const isValidEmail = (email) => {
 
   // return email.indexOf(AT_SIGN) > 0;
 
-  // return EMAIL_REGEXP.test(email);
+  return EMAIL_REGEXP.test(email);
 };
 
 export {isValidEmail};

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const APPROVED_GENRES = [`Rock`, `Folk`, `Pop`];
+const APPROVED_GENRES = [`rock`, `Folk`, `Pop`];
 
 const Albums = ({albums, band, genre, singer, onFavoritesButtonClick}) => (
   <React.Fragment>
