@@ -22,5 +22,5 @@ it(`GenreQuestionItem is rendered correctly`, () => {
     )
     .toJSON();
 
-  expect(tree).toMatchSnapshpt();
+  expect(tree).toMatchSnapshot();
 });

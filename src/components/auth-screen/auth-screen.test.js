@@ -14,5 +14,5 @@ it(`AuthScreen component render correctly`, () => {
     )
     .toJSON();
 
-  expect(tree).toMatchSnapshpt();
+  expect(tree).toMatchSnapshot();
 });

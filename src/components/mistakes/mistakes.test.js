@@ -12,7 +12,7 @@ describe(`Should Mistakes render correctly`, () => {
       )
       .toJSON();
 
-    expect(tree).toMatchSnapshpt();
+    expect(tree).toMatchSnapshot();
   });
 
   it(`With one one count`, () => {
@@ -24,6 +24,6 @@ describe(`Should Mistakes render correctly`, () => {
       )
       .toJSON();
 
-    expect(tree).toMatchSnapshpt();
+    expect(tree).toMatchSnapshot();
   });
 });

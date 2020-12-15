@@ -14,5 +14,5 @@ it(`Should GameOverScreen render correctly`, () => {
     )
     .toJSON();
 
-  expect(tree).toMatchSnapshpt();
+  expect(tree).toMatchSnapshot();
 });

@@ -45,5 +45,5 @@ it(`GenreQuestionScreen is rendered correctly`, () => {
     )
     .toJSON();
 
-  expect(tree).toMatchSnapshpt();
+  expect(tree).toMatchSnapshot();
 });

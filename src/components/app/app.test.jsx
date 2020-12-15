@@ -10,6 +10,6 @@ describe(`Render App`, () => {
       )
       .toJSON();
 
-    expect(tree).toMatchSnapshpt();
+    expect(tree).toMatchSnapshot();
   });
 });

@@ -18,7 +18,7 @@ describe(`Should WinScreen render correctly`, () => {
         )
         .toJSON();
 
-      expect(tree).toMatchSnapshpt();
+      expect(tree).toMatchSnapshot();
     });
 
     it(`With 1 mistake`, () => {
@@ -33,7 +33,7 @@ describe(`Should WinScreen render correctly`, () => {
         )
         .toJSON();
 
-      expect(tree).toMatchSnapshpt();
+      expect(tree).toMatchSnapshot();
     });
   });
 
@@ -50,7 +50,7 @@ describe(`Should WinScreen render correctly`, () => {
         )
         .toJSON();
 
-      expect(tree).toMatchSnapshpt();
+      expect(tree).toMatchSnapshot();
     });
 
     it(`With 1 mistake`, () => {
@@ -65,7 +65,7 @@ describe(`Should WinScreen render correctly`, () => {
         )
         .toJSON();
 
-      expect(tree).toMatchSnapshpt();
+      expect(tree).toMatchSnapshot();
     });
   });
 });
