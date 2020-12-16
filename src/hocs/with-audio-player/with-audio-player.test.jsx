@@ -22,7 +22,7 @@ MockComponent.propTypes = {
 
 const MockComponentWrapped = withActivePlayer(MockComponent);
 
-it(`withActivePlayer rendered correctly`, () => {
+it(`withActivePlayer is rendered correctly`, () => {
   const tree = renderer
     .create((
       <MockComponentWrapped>
