@@ -24,20 +24,19 @@ MockComponent.propTypes = {
 
 const MockComponentWrapped = withAudio(MockComponent);
 
-it(`withAudio rendered correctly`, () => {
+it(`withAudio is rendered correctly`, () => {
   const tree = renderer
     .create((
       <MockComponentWrapped
         isPlaying={false}
         onPlayButtonClick={noop}
         src={``}
-      />,
-      {
-        createNodeMock() {
-          return {};
-        }
+      />
+    ), {
+      createNodeMock() {
+        return {};
       }
-    ))
+    })
     .toJSON();
 
   expect(tree).toMatchSnapshot();
