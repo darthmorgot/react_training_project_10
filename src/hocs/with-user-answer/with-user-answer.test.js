@@ -45,7 +45,7 @@ MockComponent.propTypes = {
 
 const MockComponentWrapped = withUserAnswer(MockComponent);
 
-it(`withUserAnswer rendered correctly`, () => {
+it(`withUserAnswer is rendered correctly`, () => {
   const tree = renderer
     .create((
       <MockComponentWrapped
