@@ -1,9 +1,9 @@
 import React from 'react';
-import {confugure, shallow} from 'enzyme';
+import {configure, shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import ArtistQuestionScreen from './artist-question-screen';
 
-confugure({adapter: new Adapter()});
+configure({adapter: new Adapter()});
 
 const mock = {
   question: {

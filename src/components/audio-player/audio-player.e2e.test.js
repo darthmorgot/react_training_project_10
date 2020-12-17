@@ -1,9 +1,9 @@
 import React from 'react';
-import {confugure, shallow} from 'enzyme';
+import {configure, shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import AudioPlayer from './audio-player';
 
-confugure({adapter: new Adapter()});
+configure({adapter: new Adapter()});
 
 it(`Click by Play button calls callback`, () => {
   const handlePlayButtonClick = jest.fn();
