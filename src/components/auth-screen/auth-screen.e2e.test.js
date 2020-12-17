@@ -12,7 +12,7 @@ it(`Should replay button be pressed`, () => {
 
   const wrapper = shallow(
       <AuthScreen
-        onReplayBattonClick={handleReplayButtonClick}
+        onReplayButtonClick={handleReplayButtonClick}
         onSubmit={() => {}}
       />
   );

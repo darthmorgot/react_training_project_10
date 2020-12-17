@@ -30,8 +30,6 @@ const mock = {
   }
 };
 
-const noop = () => {};
-
 it(`When user answers genre question form is not sent`, () => {
   const {question} = mock;
   const onAnswer = jest.fn();
@@ -40,8 +38,8 @@ it(`When user answers genre question form is not sent`, () => {
       <GenreQuestionScreen
         onAnswer={onAnswer}
         question={question}
-        renderPlayer={noop}
-        onChange={noop}
+        renderPlayer={() => {}}
+        onChange={() => {}}
         userAnswers={[false, false, false, false]}
       >
         <React.Fragment />
@@ -67,8 +65,8 @@ it(`User answer passed to callback is consistent with "userAnswer" prop`, () => 
       <GenreQuestionScreen
         onAnswer={onAnswer}
         question={question}
-        renderPlayer={noop}
-        onChange={noop}
+        renderPlayer={() => {}}
+        onChange={() => {}}
         userAnswers={userAnswer}
       >
         <React.Fragment />

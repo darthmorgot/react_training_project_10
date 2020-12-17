@@ -12,7 +12,7 @@ it(`Click by Play button calls callback`, () => {
       <AudioPlayer
         isLoading={false}
         isPlaying={false}
-        onPlayBattonClick={handlePlayButtonClick}
+        onPlayButtonClick={handlePlayButtonClick}
       >
         <audio />
       </AudioPlayer>

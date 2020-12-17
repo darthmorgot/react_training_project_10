@@ -14,7 +14,7 @@ it(`Should replay button be pressed`, () => {
         questionsCount={3}
         mistakesCount={1}
         resetGameAction={handleResetAction}
-        onReplayBattonClick={handleReplayButtonClick}
+        onReplayButtonClick={handleReplayButtonClick}
       />
   );
 

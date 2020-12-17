@@ -14,7 +14,7 @@ it(`Should replay button be pressed`, () => {
   const wrapper = shallow(
       <GameOverScreen
         resetGameAction={handleResetAction}
-        onReplayBattonClick={handleReplayButtonClick}
+        onReplayButtonClick={handleReplayButtonClick}
       />
   );
 
