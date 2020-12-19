@@ -8,8 +8,8 @@ configure({adapter: new Adapter()});
 const MockComponent = () => <div />;
 const MockComponentWrapped = withActivePlayer(MockComponent);
 
-it.skip(`Should`, () => {
+it(`Should activePlayerId eq 0`, () => {
   const wrapper = shallow(<MockComponentWrapped />);
 
-  expect(wrapper.state().activePlayerId).toEqual(-1);
+  expect(wrapper.state().activePlayerId).toEqual(0);
 });
