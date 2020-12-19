@@ -52,12 +52,12 @@ describe(`Async operation work correctly`, () => {
     const loginLoader = login(fakeUser);
 
     apiMock
-      .onGet(APIRoute.LOGIN)
+      .onPost(APIRoute.LOGIN)
       .reply(200, [{fake: true}]);
 
     return loginLoader(dispatch, () => {}, api)
       .then(() => {
-        expect(dispatch).toHaveBeenCalledTimes(1);
+        expect(dispatch).toHaveBeenCalledTimes(2);
         expect(dispatch).toHaveBeenNthCalledWith(1, {
           type: ActionType.REQUIRED_AUTHORIZATION,
           payload: AuthorizationStatus.AUTH
